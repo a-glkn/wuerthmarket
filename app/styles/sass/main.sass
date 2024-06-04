@@ -1,0 +1,260 @@
+@use 'sass:math'
+@use 'sass:color'
+
+@import config
+@import 'blocks/**/*'
+
+
+.section-intro
+    height: 870px
+    background-repeat: no-repeat
+    background-position: center
+    background-size: cover
+    padding-top: 303px
+    .heading, p
+        color: #fff
+    p
+        font-style: normal
+        font-weight: 600
+        font-size: 18px
+        line-height: 160%
+    .row-2
+        margin-top: 48px
+    .row-3
+        margin-top: 90px
+
+
+.section-products
+    .heading
+        margin-bottom: 30px
+    .btn_down
+        margin-top: 48px
+        display: inline-block
+
+    .single-slider
+        display: none
+
+    .product-slider__pagination_single
+        display: none
+
+.single-slider
+    overflow: hidden
+    &__item
+        height: 100%
+
+
+.product-slider
+    overflow: hidden
+    &__controls
+        display: flex
+        justify-content: flex-end
+
+    &__pagination
+        width: auto !important
+        margin-top: auto
+        margin-bottom: auto
+        margin-right: 15px !important
+        .swiper-pagination-bullet
+            width: 7px !important
+            height: 7px !important
+            opacity: 1 !important
+            background: rgba(122, 106, 106, 0.407843)
+            padding: 0 !important
+            margin: 0 !important
+            margin-right: 8px !important
+            &.swiper-pagination-bullet-active
+                background-color: #CC0000
+    &__prev, &__next
+        margin-top: auto
+        margin-bottom: auto
+    &__next
+        margin-left: 16px
+    
+.section-recomended
+    .heading
+        margin-bottom: 30px
+
+    .row-btn
+        margin-top: 56px
+.section-about
+    img
+        max-width: 100%
+        height: auto
+
+    .heading
+        margin-bottom: 30px
+
+    .img-cert
+        margin-top: 60px
+        
+
+.section-map
+    .heading
+        margin-bottom: 30px
+    p
+        font-style: normal
+        font-weight: 400
+        font-size: 15px
+        line-height: 160%
+        color: #666666
+
+    img
+        max-width: 100%
+        height: auto
+
+    .btn
+        margin-top: 30px
+
+
+.section-form
+    background-color: #CC0000
+    .heading
+        color: #fff
+
+    .form
+        &__input
+            width: 100%
+            height: 49px
+            background-color: transparent
+            border: 0
+            border-bottom: 1px solid #fff
+            margin-bottom: 20px
+            color: #fff
+
+        .btn
+            margin-top: 20px
+
+        .form-group 
+            display: block
+            margin-top: 25px
+
+        .form-group input 
+            padding: 0
+            height: initial
+            width: initial
+            margin-bottom: 0
+            display: none
+            cursor: pointer
+        
+        .form-group label 
+            display: block !important
+            position: relative
+            cursor: pointer
+            font-style: normal
+            font-weight: 400
+            font-size: 14px
+            line-height: 140%
+            color: rgba(255,255,255, 0.5)
+            padding-left: 40px
+            user-select: none
+            a
+                color: rgba(255,255,255, 1)
+                text-decoration: nont
+                &:hover
+                    text-decoration: underline
+
+        .form-group label:before 
+            content:''
+            -webkit-appearance: none
+            background-color: transparent
+            padding: 10px
+            display: inline-block
+            position: absolute
+            top: 0px
+            left: 0
+            vertical-align: middle
+            cursor: pointer
+            width: 24px
+            height: 24px
+            border: 1px solid #FFFFFF
+            border-radius: 5px
+
+        .form-group label.err:before 
+            border-color: red
+
+        .form-group input:checked + label:after 
+            content: ''
+            display: block
+            position: absolute
+            top: 5px
+            left: 4px
+            width: 17px
+            height: 13px
+            background-repeat: no-repeat
+            background-position: 0 0
+            background-image: url(../images/dist/check.svg)
+        
+
+.section-blog
+    .col-link
+        text-align: right
+
+    .row-heading
+        margin-bottom: 60px
+
+
+.products
+    display: grid
+    grid-template-columns: repeat(5, 1fr)
+    gap: 20px
+
+    
+
++media-breakpoint-down(xl)
+    .products
+        grid-template-columns: repeat(4, 1fr)
+    
++media-breakpoint-down(lg)
+    .section-form 
+        .heading
+            margin-bottom: 30px
+
+    .section-blog
+        .row-heading
+            margin-bottom: 40px
+
+    .products
+        grid-template-columns: repeat(3, 1fr)
+    
++media-breakpoint-down(md)
+    .feature
+        margin-bottom: 20px
+
+    .section-about
+        .heading
+            margin-top: 30px
+
+    .product-slider__pagination
+        display: none !important
+
+    .products
+        grid-template-columns: repeat(2, 1fr)
+
+    .section-products 
+        .btn_down
+            margin-top: 35px
+
+    .section-recomended 
+        .row-btn
+            margin-top: 35px
++media-breakpoint-down(sm)
+    .section-intro
+        height: auto
+        padding-bottom: 40px
+
+    .product-slider__controls
+        margin-bottom: 30px
+        justify-content: flex-start
+
+   
+        
+    .section-products
+        .product-slider__pagination_products
+            display: none
+        .product-slider__pagination_single
+            display: block
+        .product-slider
+            display: none
+        .single-slider
+            display: block
+    

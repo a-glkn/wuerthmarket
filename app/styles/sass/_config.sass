@@ -1,0 +1,60 @@
+// USER VARIABLES SECTION
+$accent: #CC0000 // Accent Color
+$fontsize: 18px // Body Font Size
+$textcolor: #333 // Text Color
+$lineheight: 1.60 // Document Line Height
+$userfont: 'Montserrat', sans-serif // User Font Family
+$headfont: arial // User Font Family
+$systemfont: -apple-system, BlinkMacSystemFont, Arial, sans-serif // System Font Family
+
+// Bootstrap compatible gutter variable => $gutter
+$grid-gutter-width: 20px
+$gutter: $grid-gutter-width
+$grid-breakpoints: (xs: 0, sm: 768px, md: 992px, lg: 1200px, xl: 1560px)
+$container-max-widths: (sm: 720px, md: 960px, lg: 1140px, xl: 1500px)
+
+// IMPORT SECTION
+@import 'node_modules/bootstrap/scss/bootstrap-reboot.scss' // Bootstrap Reboot collection
+@import 'node_modules/bootstrap/scss/mixins/_breakpoints.scss' // Bootstrap Breakpoints mixin
+@import 'node_modules/bootstrap/scss/bootstrap-grid.scss' // Optional Bootstrap Grid
+// @import 'node_modules/bootstrap/scss/_utilities.scss' // Optional Bootstrap Utilites
+@import "node_modules/swiper/swiper-bundle"
+
+
+// GENERAL CSS SETTINGS
+::placeholder
+	color: rgba(255, 255, 255, .7)
+
+::selection
+	background-color: $accent
+	color: #fff
+
+input, textarea
+	outline: none
+	&:focus:required:invalid
+		border-color: red
+	&:required:valid
+		border-color: green
+
+body
+	font-family: $userfont
+	font-size: $fontsize
+	line-height: $lineheight
+	color: $textcolor
+	min-width: 320px
+	font-weight: 300
+	position: relative
+	overflow-x: hidden
+
+
+input[type="date"]::-webkit-inner-spin-button, input[type="date"]::-webkit-calendar-picker-indicator
+	opacity: 0
+
+ul, ol
+	list-style: none
+	margin: 0
+	padding: 0
+
+
+
+	
