@@ -24,6 +24,19 @@
         margin-top: 90px
 
 
+.section-about-first
+    p
+        font-style: normal
+        font-weight: 400
+        font-size: 15px
+        line-height: 160%
+        color: #333333
+    img
+        margin-top: 30px
+        max-width: 100%
+        height: auto
+        border-radius: 5px
+
 .section-products
     .heading
         margin-bottom: 30px
@@ -37,6 +50,12 @@
     .product-slider__pagination_single
         display: none
 
+.section-brand-products
+    .row-heading
+        margin-bottom: 30px
+
+    .col-btn
+        text-align: right
 .single-slider
     overflow: hidden
     &__item
@@ -87,7 +106,29 @@
     .img-cert
         margin-top: 60px
         
+.section-about-2
+    .about-img
+        display: flex
+        font-style: normal
+        font-weight: 400
+        font-size: 18px
+        line-height: 160%
+        color: #333333
+        p
+            margin: 0
+        img
+            min-width: 165px
+            max-width: 165px
+            display: block
+            height: 232px
+            margin-right: 60px
 
+    .row-img
+        margin-top: 30px
+        img
+            max-width: 100%
+            height: auto
+            border-radius: 5px
 .section-map
     .heading
         margin-bottom: 30px
@@ -203,6 +244,8 @@
 +media-breakpoint-down(xl)
     .products
         grid-template-columns: repeat(4, 1fr)
+        &_full
+            grid-template-columns: repeat(5, 1fr)
     
 +media-breakpoint-down(lg)
     .section-form 
@@ -215,7 +258,15 @@
 
     .products
         grid-template-columns: repeat(3, 1fr)
-    
+    .section-about-first
+        .heading
+            margin-bottom: 20px
+
+    .section-about-2
+        .about-img
+            margin-top: 30px
+            img
+                margin-right: 30px
 +media-breakpoint-down(md)
     .feature
         margin-bottom: 20px
@@ -258,3 +309,22 @@
         .single-slider
             display: block
     
+    .products
+        &_full
+            grid-template-columns: repeat(1, 1fr)
+
+    .section-brand-products 
+        .heading_md
+            margin-bottom: 20px
+        .col-btn
+            text-align: left
+            margin-bottom: 30px
+
+    .section-about-2
+        .about-img
+            flex-direction: column
+            img
+                width: 100%
+                min-width: 100%
+                height: auto
+                margin-bottom: 20px

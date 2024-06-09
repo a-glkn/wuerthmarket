@@ -51,6 +51,7 @@
         color: #CC0000
         font-size: 15px
         transition: .3s ease
+        background-color: transparent
         &:hover
             border: 1px solid rgba(204, 0, 0, 1)
 
@@ -120,6 +121,31 @@ a.btn
         margin-right: auto
         margin-top: auto
         margin-bottom: auto
+
+.feat
+    border-radius: 4px
+    overflow: hidden
+    position: relative
+    img
+        max-width: 100%
+        height: auto
+    &__title
+        padding-left: 35px
+        padding-right: 35px
+        position: absolute
+        width: calc(100% - 100px)
+        bottom: 0
+        left: 0
+        font-style: normal
+        font-weight: 400
+        font-size: 14px
+        line-height: 200%
+        color: #333333
+        background-color: #fff
+        padding-bottom: 40px
+        padding-top: 40px   
+        border-radius: 0 5px 0  0
+
 
 .pt
     padding-top: 80px
@@ -379,6 +405,15 @@ a.btn
             font-size: 80px
         &_md
             font-size: 36px
+
+    .feat
+        &__title
+            padding-left: 20px
+            padding-right: 20px
+            width: 100%
+            border-radius: 0
+
+
 +media-breakpoint-down(lg)
     .heading
         &_lg
@@ -403,6 +438,12 @@ a.btn
 
     .pb
         padding-bottom: 40px
+
+    .feat
+        &__title
+            min-height: 136px
+            br
+                display: none
 
 +media-breakpoint-down(sm)
     

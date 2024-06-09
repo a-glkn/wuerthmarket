@@ -59,12 +59,51 @@
         button, .soc
             margin-top: auto
             margin-bottom: auto
+
+.header-rel
+    .header
+        position: relative
+        .logo
+            width: 400px
+            height: 75px
+            img
+                width: 400px
+                height: 75px
+
+.header-izeltas
+    .header
+        .logo
+            width: 400px
+            height: 75px
+            img
+                width: 400px
+                height: 75px
+
+            &:after
+                background-color: rgba(0, 0, 0, 0.3)
+
+        .soc 
+            li 
+                a
+                    background-color: #CC0000
+                    svg
+                        path
+                            fill: #fff
 +media-breakpoint-down(xl)
     
 +media-breakpoint-down(lg)
-    .header 
+    .header
         .contact
             justify-content: flex-end
+
+    .header-izeltas
+        .header
+            .logo
+                width: 300px
+                height: 56px
+                img
+                    width: 300px
+                    height: 56px
     
 +media-breakpoint-down(md)
     .header 
