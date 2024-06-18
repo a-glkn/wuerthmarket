@@ -4,7 +4,6 @@
 @import config
 @import 'blocks/**/*'
 
-
 .section-intro
     height: 870px
     background-repeat: no-repeat
@@ -236,10 +235,15 @@
 
 .products
     display: grid
-    grid-template-columns: repeat(5, 1fr)
+    grid-templatfe-columns: repeat(5, 1fr)
     gap: 20px
 
-    
+.catalog-block
+    display: none
+
+.catalog-openned
+    .catalog-block
+        display: block
 
 +media-breakpoint-down(xl)
     .products

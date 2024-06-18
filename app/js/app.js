@@ -78,5 +78,63 @@ document.addEventListener('DOMContentLoaded', () => {
             },
         }
     });
+
+    if( document.querySelectorAll('.btn-catalog').length ) {
+        document.querySelector('.btn-catalog').addEventListener('click', function(e) {
+
+            if (document.querySelector('body').classList.contains('catalog-openned')) {
+                document.querySelector('body').classList.remove('catalog-openned');
+            } else {
+                document.querySelector('body').classList.add('catalog-openned');
+            }
+        });
+    }
+
+    if( document.querySelector('.geo-current') ) {
+        var geo =  document.querySelector('.geo');
+
+        document.querySelector('.geo-current').addEventListener('click', function(e) {
+
+            if (geo.classList.contains('openned')) {
+                geo.classList.remove('openned');
+            } else {
+                geo.classList.add('openned');
+            }
+        });
+
+        document.addEventListener( 'click', (e) => {
+            const withinBoundaries = e.composedPath().includes(geo);
+        
+            if ( ! withinBoundaries ) {
+                geo.classList.remove('openned');
+            }
+        });
+    }
     
+    
+    function checkScroll() {
+        const width  = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
+
+        if(width > 991) {
+            if (window.scrollY > 48) {
+                document.body.classList.add('scrolled');
+            } else {
+                document.body.classList.remove('scrolled');
+            }
+        }
+    }
+    window.addEventListener('scroll', checkScroll);
+
+    checkScroll();
+
+
+    if( document.querySelectorAll('.menu-toggler').length ) {
+        document.querySelector('.menu-toggler').addEventListener('click', function(e) {
+            if (document.querySelector('body').classList.contains('header-menu-openned')) {
+                document.querySelector('body').classList.remove('header-menu-openned');
+            } else {
+                document.querySelector('body').classList.add('header-menu-openned');
+            }
+        });
+    }
 });
