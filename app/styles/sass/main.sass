@@ -146,11 +146,71 @@
         margin-top: 30px
 
 
+.map
+    position: relative
+    path
+        transition: .3s ease
+    .pin
+        position: absolute
+        top: 0
+        left: 0
+        cursor: pointer
+        &-1
+            left: 18.5%
+            top: 45.5%
+        &-content
+            display: none
+            background: #FFFFFF
+            border: 1px solid #E5E5E5
+            border-radius: 4px
+            width: 277px
+            padding: 15px
+            position: absolute
+            left: 50%
+            top: 53px
+            transform: translateX(-50%)
+            svg
+                left: 50%
+                top: -7px
+                transform: translateX(-50%)
+                position: absolute
+            &__title
+                font-family: 'Arial'
+                font-style: normal
+                font-weight: 700
+                font-size: 15px
+                line-height: 20px
+                color: #555555
+                margin-bottom: 10px
+            ul
+                padding-left: 12px
+                li
+                    font-family: 'Arial'
+                    font-style: normal
+                    font-weight: 400
+                    font-size: 12px
+                    line-height: 16px
+                    color: #555555
+                    list-style-type: disc
+                    margin-bottom: 5px
+                    &:last-child
+                        margin-bottom: 0
+                    
+
+        &:hover
+            .pin-content
+                display: block
+
+    
+    .interactive
+        &.active
+            fill-opacity: 1
 .section-form
     background-color: #CC0000
     .heading
         color: #fff
-
+    .semi-heading
+        margin-top: 0.5em
     .form
         &__input
             width: 100%

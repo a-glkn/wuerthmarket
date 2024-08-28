@@ -137,4 +137,26 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
     }
+
+
+    if( document.querySelectorAll('.map').length ) {
+
+
+        const hoverObjects = document.querySelectorAll('.map .pin');
+        const targetObjects = document.querySelectorAll('.pan path.interactive');
+        
+        hoverObjects.forEach((hoverObject, index) => {
+          const targetObject = targetObjects[index];
+          
+          hoverObject.addEventListener('mouseenter', () => {
+            targetObject.classList.add('active');
+          });
+        
+          hoverObject.addEventListener('mouseleave', () => {
+            targetObject.classList.remove('active');
+          });
+        });
+        
+
+    }
 });

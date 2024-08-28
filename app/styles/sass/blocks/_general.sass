@@ -23,7 +23,14 @@
         font-size: 40px
         line-height: 130%
 
+.semi-heading
+    font-style: normal
+    font-weight: 400
+    font-size: 24px
+    line-height: 130%
+    color: #FFFFFF
 
+    
 .btn
     border: 0
     border-radius: 4px
@@ -88,15 +95,17 @@ a.btn
     display: inline-block
     text-decoration: none
     text-align: center
+    &.btn_accent
+        color: #fff !important
     &.btn_outline
         color: #CC0000 !important
     &_md
-        line-height: 59px
+        line-height: 59px !important
     &_sm
-        line-height: 48px
+        line-height: 48px !important
 
     &_xsm
-        line-height: 38px
+        line-height: 38px !important
         
 
 .feature
@@ -425,7 +434,9 @@ a.btn
 
     .pb
         padding-bottom: 60px
-    
+    .semi-heading
+        font-size: 18px
+        margin-bottom: 30px
 +media-breakpoint-down(md)
     .heading
         &_lg
