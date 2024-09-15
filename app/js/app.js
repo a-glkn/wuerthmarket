@@ -13,9 +13,11 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 
+    var isDesktop = window.innerWidth > 991;
 
     var swiper3 = new Swiper(".section-products .single-slider", {
         loop: true,
+        allowTouchMove: !isDesktop,
         spaceBetween: 20,
         slidesPerView: 1,
         slidesPerGroup: 1,
@@ -49,6 +51,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     var swiper2 = new Swiper(".section-recomended .single-slider", {
         loop: true,
+        allowTouchMove: !isDesktop,
         spaceBetween: 20,
         slidesPerView: 1,
         slidesPerGroup: 1,
