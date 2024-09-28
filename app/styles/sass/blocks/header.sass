@@ -1,170 +1,245 @@
-.func-btns
-    margin-top: auto
-    margin-bottom: auto
-    display: flex
-    justify-content: space-between
-    a
-        display: flex
-        text-decoration: none
-        color: #333333
-        margin-right: 30px
-        span
-            white-space: nowrap
-            font-style: normal
-            font-weight: 400
-            font-size: 18px
-            line-height: 22px
-            color: #333333
-            margin-top: auto
-            margin-bottom: auto
-            transition: .3s ease
-        div
-            height: 24px
-            background: #CC0000
-            font-style: normal
-            font-weight: 700
-            font-size: 14px
-            line-height: 15px
-            padding-left: 7.25px
-            padding-right: 7.25px
-            color: #FFFFFF
-            line-height: 24px
-            margin-left: 10px
-        svg
-            margin-left: 10px
-            margin-top: auto
-            margin-bottom: auto
-        &:last-child
-            margin-right: 0
-        &:hover
-            span
-                color: $accent
-
-
-#header
-    width: 100%
-    background-color: #fff
-    position: absolute
-    top: 0
-    left: 0
-    height: 127px
-    z-index: 101
-    .menu-toggler
-        display: none
-        width: 39px
-        height: 38px
-        cursor: pointer
+.new-layout    
+    &.header-fixed
+        padding-top: 127px
+    .func-btns
         margin-top: auto
         margin-bottom: auto
-        margin-right: 9px
-    .logo
-        margin-right: 40px
-    .header-1
         display: flex
-        padding-top: 20px
-        height: 48px
         justify-content: space-between
-        .logos
+        a
             display: flex
-            margin-top: auto
-            margin-bottom: auto
-            .logo-item
-                margin-right: 32px
-                position: relative
-                &:after
-                    content: ''
-                    display: block
-                    width: 1px
-                    height: 24px
-                    background-color: #757575
-                    position: absolute
-                    right: -16px
-                    top: 4.2px
-                &:last-child
-                    margin-right: 0
-                    &:after
-                        display: none
-        .header-1-left
-            display: flex
-            justify-content: space-between
-        .header-1-right
-            display: flex
-        .moto
-            font-style: normal
-            font-weight: 400
-            font-size: 13px
-            line-height: 20px
+            text-decoration: none
             color: #333333
-            white-space: nowrap
-        nav
+            margin-right: 30px
+            span
+                white-space: nowrap
+                font-style: normal
+                font-weight: 400
+                font-size: 18px
+                line-height: 22px
+                color: #333333
+                margin-top: auto
+                margin-bottom: auto
+                transition: .3s ease
+            div
+                height: 24px
+                background: #CC0000
+                font-style: normal
+                font-weight: 700
+                font-size: 14px
+                line-height: 15px
+                padding-left: 7.25px
+                padding-right: 7.25px
+                color: #FFFFFF
+                line-height: 24px
+                margin-left: 10px
+            svg
+                margin-left: 10px
+                margin-top: auto
+                margin-bottom: auto
+            &:last-child
+                margin-right: 0
+            &:hover
+                span
+                    color: $accent
+
+
+    #header
+        width: 100%
+        background-color: #fff
+        position: absolute
+        top: 0
+        left: 0
+        height: 127px
+        z-index: 101
+        .menu-toggler
+            display: none
+            width: 39px
+            height: 38px
+            cursor: pointer
             margin-top: auto
             margin-bottom: auto
+            margin-right: 9px
+        .logo
+            margin-right: 40px
+        .header-1
             display: flex
-            >ul
+            padding-top: 20px
+            height: 48px
+            justify-content: space-between
+            .logos
+                display: flex
+                margin-top: auto
+                margin-bottom: auto
+                .logo-item
+                    margin-right: 32px
+                    position: relative
+                    &:after
+                        content: ''
+                        display: block
+                        width: 1px
+                        height: 24px
+                        background-color: #757575
+                        position: absolute
+                        right: -16px
+                        top: 4.2px
+                    &:last-child
+                        margin-right: 0
+                        &:after
+                            display: none
+            .header-1-left
                 display: flex
                 justify-content: space-between
-                >li
-                    margin-left: 26px
-                    position: relative
-                    >a
-                        text-decoration: none
-                        font-style: normal
-                        font-weight: 400
-                        font-size: 16px
-                        line-height: 160%
-                        color: #333333
-                        white-space: nowrap
-                        transition: .3s ease
-                        &:hover
-                            color: $accent
-                    .sub
-                        position: absolute
-                        left: 0
-                        top: 28px
-                        display: none
-                        z-index: 110
-                        padding-top: 12px
-                        ul
-                            display: block
+            .header-1-right
+                display: flex
+            .moto
+                font-style: normal
+                font-weight: 400
+                font-size: 13px
+                line-height: 20px
+                color: #333333
+                white-space: nowrap
+            nav
+                margin-top: auto
+                margin-bottom: auto
+                display: flex
+                >ul
+                    display: flex
+                    justify-content: space-between
+                    >li
+                        margin-left: 26px
+                        position: relative
+                        >a
+                            text-decoration: none
                             font-style: normal
                             font-weight: 400
-                            font-size: 13px
-                            line-height: 20px
+                            font-size: 16px
+                            line-height: 160%
                             color: #333333
-                            background: #FFFFFF
-                            box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.02), 0px 2px 4px rgba(0, 0, 0, 0.08)
-                            border-radius: 4px
-                            padding: 16px
-                            li
-                                padding: 0
-                                margin-bottom: 18px
-                                &:last-child
-                                    margin-bottom: 0
-                                a
-                                    color: #333333
-                                    white-space: nowrap
-                                    text-decoration: none
-                                    &:hover
-                                        color: $accent
-
-                    &:hover
+                            white-space: nowrap
+                            transition: .3s ease
+                            &:hover
+                                color: $accent
                         .sub
-                            display: block
+                            position: absolute
+                            left: 0
+                            top: 28px
+                            display: none
+                            z-index: 110
+                            padding-top: 12px
+                            ul
+                                display: block
+                                font-style: normal
+                                font-weight: 400
+                                font-size: 13px
+                                line-height: 20px
+                                color: #333333
+                                background: #FFFFFF
+                                box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.02), 0px 2px 4px rgba(0, 0, 0, 0.08)
+                                border-radius: 4px
+                                padding: 16px
+                                li
+                                    padding: 0
+                                    margin-bottom: 18px
+                                    &:last-child
+                                        margin-bottom: 0
+                                    a
+                                        color: #333333
+                                        white-space: nowrap
+                                        text-decoration: none
+                                        &:hover
+                                            color: $accent
 
-    .header-2
-        display: flex
-        justify-content: space-between
-        padding-top: 20px
-        padding-bottom: 20px
-    .geo
-        margin-top: auto
-        margin-bottom: auto
-        margin-left: 28px
-        position: relative
-        user-select: none
-        &-current
+                        &:hover
+                            .sub
+                                display: block
+
+        .header-2
             display: flex
-            cursor: pointer
+            justify-content: space-between
+            padding-top: 20px
+            padding-bottom: 20px
+        .geo
+            margin-top: auto
+            margin-bottom: auto
+            margin-left: 28px
+            position: relative
+            user-select: none
+            &-current
+                display: flex
+                cursor: pointer
+                white-space: nowrap
+                span
+                    margin-left: 9px
+                    font-style: normal
+                    font-weight: 400
+                    font-size: 13px
+                    line-height: 20px
+                    color: #333333
+                    margin-right: 9px
+                svg, span
+                    margin-top: auto
+                    margin-bottom: auto
+
+                .arr
+                    position: relative
+                    top: 2px
+            &-list
+                position: absolute
+                z-index: 101
+                top: 29px
+                right: 0
+                width: 160px
+                background: #FFFFFF
+                box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.02), 0px 2px 4px rgba(0, 0, 0, 0.08)
+                border-radius: 4px
+                padding-left: 16px
+                padding-right: 8px
+                max-height: 242px 
+                padding-top: 16px
+                padding-bottom: 16px
+                display: none
+                &__inner
+                    padding-right: 8px
+                    overflow: auto
+                    height: 100%
+                    max-height: 210px 
+                    &::-webkit-scrollbar 
+                        width: 1px
+
+                    &::-webkit-scrollbar-track 
+                        background-color: transparent
+
+                    &::-webkit-scrollbar-thumb 
+                        background-color: rgba(51, 51, 51, 0.3)
+                &__wrap
+                
+                a
+                    text-decoration: none
+                    font-style: normal
+                    font-weight: 400
+                    font-size: 13px
+                    line-height: 20px
+                    color: #333333
+                    display: block
+                    margin-bottom: 18px
+                    &:last-child
+                        margin-bottom: 0
+                    &.active
+                        color: $accent
+            &.openned
+                .geo
+                    &-list
+                        display: block
+                    &-current
+                        .arr
+                            transform: rotate(180deg)
+
+        .phone
+            margin-left: 30px
+            margin-top: auto
+            margin-bottom: auto
+            text-decoration: none
             white-space: nowrap
             span
                 margin-left: 9px
@@ -174,522 +249,452 @@
                 line-height: 20px
                 color: #333333
                 margin-right: 9px
+                white-space: nowrap
             svg, span
                 margin-top: auto
                 margin-bottom: auto
-
-            .arr
-                position: relative
-                top: 2px
-        &-list
-            position: absolute
-            z-index: 101
-            top: 29px
-            right: 0
-            width: 160px
-            background: #FFFFFF
-            box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.02), 0px 2px 4px rgba(0, 0, 0, 0.08)
-            border-radius: 4px
-            padding-left: 16px
-            padding-right: 8px
-            max-height: 242px 
-            padding-top: 16px
-            padding-bottom: 16px
-            display: none
-            &__inner
-                padding-right: 8px
-                overflow: auto
-                height: 100%
-                max-height: 210px 
-                &::-webkit-scrollbar 
-                    width: 1px
-
-                &::-webkit-scrollbar-track 
-                    background-color: transparent
-
-                &::-webkit-scrollbar-thumb 
-                    background-color: rgba(51, 51, 51, 0.3)
-            &__wrap
-            
-            a
-                text-decoration: none
-                font-style: normal
-                font-weight: 400
-                font-size: 13px
-                line-height: 20px
-                color: #333333
-                display: block
-                margin-bottom: 18px
-                &:last-child
-                    margin-bottom: 0
-                &.active
-                    color: $accent
-        &.openned
-            .geo
-                &-list
-                    display: block
-                &-current
-                    .arr
-                        transform: rotate(180deg)
-
-    .phone
-        margin-left: 30px
-        margin-top: auto
-        margin-bottom: auto
-        text-decoration: none
-        white-space: nowrap
-        span
-            margin-left: 9px
-            font-style: normal
-            font-weight: 400
-            font-size: 13px
-            line-height: 20px
-            color: #333333
-            margin-right: 9px
-            white-space: nowrap
-        svg, span
-            margin-top: auto
-            margin-bottom: auto
-    .btn-catalog
-        width: 136px
-        min-width: 136px
-        height: 43px
-        background-color: #fff
-        border: 1px solid rgba(204, 0, 0, 0.35)
-        font-style: normal
-        font-weight: 700
-        font-size: 18px
-        line-height: 160%
-        color: #CC0000
-        display: inline-flex
-        transition: .3s ease
-        svg
-            margin-left: auto
-
-        span
-            margin-right: auto
-            margin-left: 10px
-        svg, span
-            margin-top: auto
-            margin-bottom: auto
-        &:hover
-            border: 1px solid rgba(204, 0, 0, 1)
-
-    .search-form
-        position: relative
-        width: 100%
-        margin-left: 64px
-        margin-right: 64px
-        margin-top: auto
-        margin-bottom: auto
-        input
-            width: 100%
-            padding: 12px 15px
-            height: 41px
-            background: #F8F8F8
-            border: 1px solid #E5E5E5
-            border-radius: 4px
-            font-style: normal
-            font-weight: 400
-            font-size: 15px
-            line-height: 17px
-            padding-left: 15px
-            padding-right: 50px
-            &::placeholder
-                color: #757575
-        button
-            position: absolute
-            right: 12px
-            top: 12px
-            width: 17px
-            height: 17px
-            border: 0
-            background-color: transparent
-            svg
-                position: absolute
-                top: 0
-                left: 0
-            
-
-#header-menu
-    display: none
-    position: fixed
-    top: 127px
-    width: 100%
-    left: 0
-    z-index: 101
-    background-color: #fff
-    height: calc(100vh - 127px)
-    overflow: auto
-    padding-top: 32px
-    .func-btns
-        flex-direction: column
-        a
-            margin-bottom: 30px
-            &:last-child
-                margin-bottom: 0
-            svg
-                order: 1
-                margin-left: 0
-                margin-right: 10px
-            span
-                order: 2
-            div
-                order: 3
-    .btn
-        margin-top: 48px
-    nav
-        padding-bottom: 48px
-        border-bottom: 1px solid rgba(51, 51, 51, 0.1)
-        margin-bottom: 48px
-        ul
-            li
-                margin-bottom: 48px
-                &:last-child
-                    margin-bottom: 0
-                a
-                    font-style: normal
-                    font-weight: 400
-                    font-size: 18px
-                    line-height: 20px
-                    color: #333333
-                    text-decoration: none
-
-    .soc
-        display: flex
-        margin-top: 24px
-        margin-bottom: 30px
-        li
-            width: 39px
-            height: 39px
-            margin-right: 9px
-            a
-                border-radius: 4px
-                width: 39px
-                height: 39px
-                background-color: #E6E6E6
-                display: flex
-                svg
-                    margin: auto
-                    path
-                        fill: rgba(51, 51, 51, 0.5)
-
-
-.header-menu-openned
-    overflow: hidden
-    #header-menu
-        display: block
-
-.header-fixed
-    padding-top: 127px
-
-.header
-    position: absolute
-    width: 100%
-    z-index: 2
-    padding-top: 40px
-    padding-bottom: 40px
-    .logos
-        display: flex
-        margin-top: auto
-        margin-bottom: auto
-    .logo
-        text-decoration: none
-        width: 274px
-        height: 75px
-        margin-right: 80px
-        margin-top: auto
-        margin-bottom: auto
-        position: relative
-        &:after
-            top: 0
-            right: -40.5px
-            height: 52px
-            width: 1px
-            content: ''
-            display: block
-            position: absolute
-            top: 50%
-            margin-top: -26px
-            background-color: rgba(255,255,255,.3)
-        img
-            width: 274px
-            height: 75px
-    .logo-2
-        text-decoration: none
-        width: 182px
-        height: 37px
-        margin-top: auto
-        margin-bottom: auto
-    .soc
-        display: flex
-        li
-            margin-left: 9px
-            a
-                display: block
-                width: 39px
-                height: 39px
-                background-color: #fff
-                border-radius: 4px
-                text-decoration: none
-                display: flex
-                svg
-                    margin: auto
-    .contact
-        display: flex
-        justify-content: space-between
-        button, .soc
-            margin-top: auto
-            margin-bottom: auto
-.header-rel
-    .header
-        position: relative
-        .logo
-            width: 400px
-            height: 75px
-            img
-                width: 400px
-                height: 75px
-.header-izeltas
-    .header
-        .logo
-            width: 400px
-            height: 75px
-            img
-                width: 400px
-                height: 75px
-
-            &:after
-                background-color: rgba(0, 0, 0, 0.3)
-
-        .soc 
-            li 
-                a
-                    background-color: #CC0000
-                    svg
-                        path
-                            fill: #fff
-
-nav.catalog-block
-    padding-top: 20px
-    padding-bottom: 12px
-    background-color: #fff
-    position: absolute
-    top: 127px
-    left: 0
-    width: 100%
-    z-index: 100
-    box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.02), 0px 2px 4px rgba(0, 0, 0, 0.08)
-    .row-heading
-        margin-bottom: 48px
-        .col-link
-            text-align: right
-    .menu-catalog
-        display: flex
-        flex-wrap: wrap
-        justify-content: space-between
-        &__item
-            width: calc(100% / 7 - 10px)
-            display: flex
-            font-family: 'Arial'
-            font-style: normal
-            font-weight: 400
-            font-size: 16px
-            line-height: 110%
-            color: #333333
-            text-decoration: none
-            margin-bottom: 48px
-            svg
-                margin-right: 8px
-                min-width: 23px
-                min-height: 23px
-                max-width: 23px
-                max-height: 23px
-
-.scrolled
-    #header
-        position: fixed
-        height: 80px
-        .header-1
-            display: none
-
-    nav.catalog-block
-        position: fixed
-        top: 80px
-
-+media-breakpoint-down(xl)
-    #header
-        .geo
-            margin-left: 30px
-        .header-1
-            nav
-                >ul
-                    >li
-                        margin-left: 20px
-                        >a
-                            font-size: 14px
-        .search-form
-            margin-left: 30px
-            margin-right: 30px
-
-        .func-btns 
-            a 
-                margin-right: 20px
-                span
-                    font-size: 14px
-
-        .header-1
-            .logos
-                .logo-item
-                    margin-right: 28px
-                    width: 100%
-                    svg, img
-                        width: 100%
-                        height: auto
-
-    nav.catalog-block
-        .row-heading
-            margin-bottom: 30px
-        .menu-catalog
-            &__item
-                width: calc(100% / 5 - 10px)
-                margin-bottom: 30px
-+media-breakpoint-down(lg)
-    .header
-        .contact
-            justify-content: flex-end
-
-    .header-izeltas
-        .header
-            .logo
-                width: 300px
-                height: 56px
-                img
-                    width: 300px
-                    height: 56px
-
-    #header
-        .geo
-            margin-left: 20px
-        .header-1
-            nav
-                >ul
-                    >li
-                        margin-left: 15px
-                        >a
-                            font-size: 12px
-        .search-form
-            margin-left: 20px
-            margin-right: 20px
-
-        .func-btns 
-            a 
-                margin-right: 20px
-                span
-                    font-size: 14px
-
-        .header-1
-            .logos
-                .logo-item
-                    margin-right: 28px
-    
-    .menu-catalog
-        &__item
-            margin-bottom: 20px
-            font-size: 15px
-
-+media-breakpoint-down(md)
-    .header 
-        padding-top: 20px
-        padding-bottom: 0
-        .contact
-            margin-top: 20px
-            justify-content: flex-start
-            .soc
-                margin-left: 20px
-   
-    #header
-        position: fixed
-        .menu-toggler
-            display: block
-        .logo-item
-            display: none
-            &_main
-                display: block
-            
-
-    #header 
         .btn-catalog
-            display: none
-        .phone 
-            display: none
+            width: 136px
+            min-width: 136px
+            height: 43px
+            background-color: #fff
+            border: 1px solid rgba(204, 0, 0, 0.35)
+            font-style: normal
+            font-weight: 700
+            font-size: 18px
+            line-height: 160%
+            color: #CC0000
+            display: inline-flex
+            transition: .3s ease
+            svg
+                margin-left: auto
+
             span
-                margin-right: 0 
-        .search-form
-            margin-left: 0
-            margin-right: 0
-        .func-btns
-            display: none
-        .header-1 
-            &-left, &-right
+                margin-right: auto
+                margin-left: 10px
+            svg, span
                 margin-top: auto
                 margin-bottom: auto
-            nav
-                display: none
-            .logos 
-                .logo-item
-                    margin-right: 0
-                    &:after
-                        display: none
-                    &_main
+            &:hover
+                border: 1px solid rgba(204, 0, 0, 1)
+
+        .search-form
+            position: relative
+            width: 100%
+            margin-left: 64px
+            margin-right: 64px
+            margin-top: auto
+            margin-bottom: auto
+            input
+                width: 100%
+                padding: 12px 15px
+                height: 41px
+                background: #F8F8F8
+                border: 1px solid #E5E5E5
+                border-radius: 4px
+                font-style: normal
+                font-weight: 400
+                font-size: 15px
+                line-height: 17px
+                padding-left: 15px
+                padding-right: 50px
+                &::placeholder
+                    color: #757575
+            button
+                position: absolute
+                right: 12px
+                top: 12px
+                width: 17px
+                height: 17px
+                border: 0
+                background-color: transparent
+                svg
+                    position: absolute
+                    top: 0
+                    left: 0
+                
+
+    #header-menu
+        display: none
+        position: fixed
+        top: 127px
+        width: 100%
+        left: 0
+        z-index: 101
+        background-color: #fff
+        height: calc(100vh - 127px)
+        overflow: auto
+        padding-top: 32px
+        .func-btns
+            flex-direction: column
+            a
+                margin-bottom: 30px
+                &:last-child
+                    margin-bottom: 0
+                svg
+                    order: 1
+                    margin-left: 0
+                    margin-right: 10px
+                span
+                    order: 2
+                div
+                    order: 3
+        .btn
+            margin-top: 48px
+        nav
+            padding-bottom: 48px
+            border-bottom: 1px solid rgba(51, 51, 51, 0.1)
+            margin-bottom: 48px
+            ul
+                li
+                    margin-bottom: 48px
+                    &:last-child
+                        margin-bottom: 0
+                    a
+                        font-style: normal
+                        font-weight: 400
+                        font-size: 18px
+                        line-height: 20px
+                        color: #333333
+                        text-decoration: none
+
+        .soc
+            display: flex
+            margin-top: 24px
+            margin-bottom: 30px
+            li
+                width: 39px
+                height: 39px
+                margin-right: 9px
+                a
+                    border-radius: 4px
+                    width: 39px
+                    height: 39px
+                    background-color: #E6E6E6
+                    display: flex
+                    svg
+                        margin: auto
+                        path
+                            fill: rgba(51, 51, 51, 0.5)
+
+
+    &.header-menu-openned
+        overflow: hidden
+        #header-menu
+            display: block
+
+    .header-block
+        position: absolute
+        width: 100%
+        z-index: 2
+        padding-top: 40px
+        padding-bottom: 40px
+        .logos
+            display: flex
+            margin-top: auto
+            margin-bottom: auto
+        .logo
+            text-decoration: none
+            width: 274px
+            height: 75px
+            margin-right: 80px
+            margin-top: auto
+            margin-bottom: auto
+            position: relative
+            &:after
+                top: 0
+                right: -40.5px
+                height: 52px
+                width: 1px
+                content: ''
+                display: block
+                position: absolute
+                top: 50%
+                margin-top: -26px
+                background-color: rgba(255,255,255,.3)
+            img
+                width: 274px
+                height: 75px
+        .logo-2
+            text-decoration: none
+            width: 182px
+            height: 37px
+            margin-top: auto
+            margin-bottom: auto
+        .soc
+            display: flex
+            li
+                margin-left: 9px
+                a
+                    display: block
+                    width: 39px
+                    height: 39px
+                    background-color: #fff
+                    border-radius: 4px
+                    text-decoration: none
+                    display: flex
+                    svg
+                        margin: auto
+        .contact
+            display: flex
+            justify-content: space-between
+            button, .soc
+                margin-top: auto
+                margin-bottom: auto
+    &.header-rel
+        .header-block
+            position: relative
+            .logo
+                width: 400px
+                height: 75px
+                img
+                    width: 400px
+                    height: 75px
+    &.header-izeltas
+        .header-block
+            .logo
+                width: 400px
+                height: 75px
+                img
+                    width: 400px
+                    height: 75px
+
+                &:after
+                    background-color: rgba(0, 0, 0, 0.3)
+
+            .soc 
+                li 
+                    a
+                        background-color: #CC0000
                         svg
-                            width: 103px
-                            height: 21px
+                            path
+                                fill: #fff
+
+    nav.catalog-block
+        padding-top: 20px
+        padding-bottom: 12px
+        background-color: #fff
+        position: absolute
+        top: 127px
+        left: 0
+        width: 100%
+        z-index: 100
+        box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.02), 0px 2px 4px rgba(0, 0, 0, 0.08)
+        .row-heading
+            margin-bottom: 48px
+            .col-link
+                text-align: right
+        .menu-catalog
+            display: flex
+            flex-wrap: wrap
+            justify-content: space-between
+            &__item
+                width: calc(100% / 7 - 10px)
+                display: flex
+                font-family: 'Arial'
+                font-style: normal
+                font-weight: 400
+                font-size: 16px
+                line-height: 110%
+                color: #333333
+                text-decoration: none
+                margin-bottom: 48px
+                svg
+                    margin-right: 8px
+                    min-width: 23px
+                    min-height: 23px
+                    max-width: 23px
+                    max-height: 23px
+
     .scrolled
         #header
             position: fixed
             height: 80px
             .header-1
-                display: flex
+                display: none
 
-    .header-menu-openned
-        #header 
+        nav.catalog-block
+            position: fixed
+            top: 80px
+
++media-breakpoint-down(xl)
+    .new-layout 
+        #header
             .geo
+                margin-left: 30px
+            .header-1
+                nav
+                    >ul
+                        >li
+                            margin-left: 20px
+                            >a
+                                font-size: 14px
+            .search-form
+                margin-left: 30px
+                margin-right: 30px
+
+            .func-btns 
+                a 
+                    margin-right: 20px
+                    span
+                        font-size: 14px
+
+            .header-1
+                .logos
+                    .logo-item
+                        margin-right: 28px
+                        width: 100%
+                        svg, img
+                            width: 100%
+                            height: auto
+
+        nav.catalog-block
+            .row-heading
+                margin-bottom: 30px
+            .menu-catalog
+                &__item
+                    width: calc(100% / 5 - 10px)
+                    margin-bottom: 30px
++media-breakpoint-down(lg)
+    .new-layout 
+        .header-block
+            .contact
+                justify-content: flex-end
+
+        &.header-izeltas
+            .header-block
+                .logo
+                    width: 300px
+                    height: 56px
+                    img
+                        width: 300px
+                        height: 56px
+
+        #header
+            .geo
+                margin-left: 20px
+            .header-1
+                nav
+                    >ul
+                        >li
+                            margin-left: 15px
+                            >a
+                                font-size: 12px
+            .search-form
+                margin-left: 20px
+                margin-right: 20px
+
+            .func-btns 
+                a 
+                    margin-right: 20px
+                    span
+                        font-size: 14px
+
+            .header-1
+                .logos
+                    .logo-item
+                        margin-right: 28px
+        
+        .menu-catalog
+            &__item
+                margin-bottom: 20px
+                font-size: 15px
+
++media-breakpoint-down(md)
+    .new-layout 
+        .header-block
+            padding-top: 20px
+            padding-bottom: 0
+            .contact
+                margin-top: 20px
+                justify-content: flex-start
+                .soc
+                    margin-left: 20px
+    
+        #header
+            position: fixed
+            .menu-toggler
+                display: block
+            .logo-item
+                display: none
+                &_main
+                    display: block
+                
+
+        #header 
+            .btn-catalog
                 display: none
             .phone 
-                display: block
+                display: none
+                span
+                    margin-right: 0 
+            .search-form
+                margin-left: 0
+                margin-right: 0
+            .func-btns
+                display: none
+            .header-1 
+                &-left, &-right
+                    margin-top: auto
+                    margin-bottom: auto
+                nav
+                    display: none
+                .logos 
+                    .logo-item
+                        margin-right: 0
+                        &:after
+                            display: none
+                        &_main
+                            svg
+                                width: 103px
+                                height: 21px
+        .scrolled
+            #header
+                position: fixed
+                height: 80px
+                .header-1
+                    display: flex
 
-    nav.catalog-block
-        display: none
+        &.header-menu-openned
+            #header 
+                .geo
+                    display: none
+                .phone 
+                    display: block
+
+        nav.catalog-block
+            display: none
 +media-breakpoint-down(sm)
-    .header
-        .logo
-            width: auto
-            height: auto
-            margin-left: auto
-        .logo-2
-            margin-right: auto
-        .logos
-            width: 100%
-
-        .contact
-            .btn
+    .new-layout 
+        .header-block
+            .logo
+                width: auto
+                height: auto
                 margin-left: auto
-            .soc
+            .logo-2
                 margin-right: auto
+            .logos
+                width: 100%
+
+            .contact
+                .btn
+                    margin-left: auto
+                .soc
+                    margin-right: auto
 
 
 @media (max-width: 575.98px)
-    .header
-        .logo
-            margin-right: auto
-            margin-left: auto
-            margin-bottom: 20px
-            &:after
-                display: none
-        .logos
-            flex-direction: column
+    .new-layout 
+        .header-block
+            .logo
+                margin-right: auto
+                margin-left: auto
+                margin-bottom: 20px
+                &:after
+                    display: none
+            .logos
+                flex-direction: column
 
-        .logo-2
-            margin-right: auto
-            margin-left: auto
+            .logo-2
+                margin-right: auto
+                margin-left: auto
