@@ -82,8 +82,8 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 
-    if( document.querySelectorAll('.btn-catalog').length ) {
-        document.querySelector('.btn-catalog').addEventListener('click', function(e) {
+    if( document.querySelectorAll('.btn-new-catalog').length ) {
+        document.querySelector('.btn-new-catalog').addEventListener('click', function(e) {
 
             if (document.querySelector('body').classList.contains('catalog-openned')) {
                 document.querySelector('body').classList.remove('catalog-openned');
