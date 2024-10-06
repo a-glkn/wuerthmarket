@@ -43,7 +43,6 @@
                 span
                     color: $accent
 
-
     #header
         width: 100%
         background-color: #fff
@@ -63,9 +62,11 @@
         .logo
             margin-right: 40px
         .header-1
+            margin-top: auto
+            margin-bottom: auto
             display: flex
             padding-top: 20px
-            height: 48px
+            height: 59px
             justify-content: space-between
             .logos
                 display: flex
@@ -89,9 +90,13 @@
                             display: none
             .header-1-left
                 display: flex
+                margin-top: auto
+                margin-bottom: auto
                 justify-content: space-between
             .header-1-right
                 display: flex
+                margin-top: auto
+                margin-bottom: auto
             .moto
                 font-style: normal
                 font-weight: 400
@@ -109,6 +114,14 @@
                     >li
                         margin-left: 26px
                         position: relative
+                        padding-top: 5px
+                        padding-bottom: 5px
+                        &.bordered
+                            border: 1px solid #CC0000
+                            border-radius: 4px
+                            padding-left: 10px
+                            padding-right: 10px
+                            
                         >a
                             text-decoration: none
                             font-style: normal
@@ -157,8 +170,8 @@
         .header-2
             display: flex
             justify-content: space-between
-            padding-top: 20px
-            padding-bottom: 20px
+            padding-top: 13px
+            padding-bottom: 12px
         .geo
             margin-top: auto
             margin-bottom: auto
@@ -212,8 +225,6 @@
 
                     &::-webkit-scrollbar-thumb 
                         background-color: rgba(51, 51, 51, 0.3)
-                &__wrap
-                
                 a
                     text-decoration: none
                     font-style: normal
@@ -234,7 +245,6 @@
                     &-current
                         .arr
                             transform: rotate(180deg)
-
         .phone
             margin-left: 30px
             margin-top: auto
@@ -312,7 +322,6 @@
                     position: absolute
                     top: 0
                     left: 0
-                
 
     #header-menu
         display: none
@@ -509,7 +518,7 @@
     &.scrolled
         #header
             position: fixed
-            height: 80px
+            height: 68px
             .header-1
                 display: none
 
@@ -651,7 +660,7 @@
         .scrolled
             #header
                 position: fixed
-                height: 80px
+                height: 68px
                 .header-1
                     display: flex
 

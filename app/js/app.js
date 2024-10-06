@@ -119,7 +119,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const width  = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
 
         if(width > 991) {
-            if (window.scrollY > 48) {
+            if (window.scrollY > 59) {
                 document.body.classList.add('scrolled');
             } else {
                 document.body.classList.remove('scrolled');
