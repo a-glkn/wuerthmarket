@@ -141,6 +141,16 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
+    
+    if( document.querySelectorAll('#header-menu li.has-sub').length ) {
+        document.querySelectorAll('#header-menu li.has-sub').forEach((el) => {
+            el.addEventListener('click', function(e) {
+                e.preventDefault();
+                el.classList.toggle('active');
+            });
+        });
+    }
+
 
     if( document.querySelectorAll('.map').length ) {
 

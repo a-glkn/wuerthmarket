@@ -354,18 +354,57 @@
             padding-bottom: 48px
             border-bottom: 1px solid rgba(51, 51, 51, 0.1)
             margin-bottom: 48px
-            ul
-                li
+            >ul
+                >li
                     margin-bottom: 48px
                     &:last-child
                         margin-bottom: 0
-                    a
+                    >a
                         font-style: normal
                         font-weight: 400
                         font-size: 18px
                         line-height: 20px
                         color: #333333
                         text-decoration: none
+                    &.bordered
+                        >a
+                            padding: 5px 10px
+                            border: 1px solid rgba(204, 0, 0, 1)
+                            border-radius: 4px
+
+                    &.has-sub
+                        position: relative
+                        &.active
+                            display: block
+                        svg
+                            position: absolute
+                            right: 0
+                            top: 7.5px
+                        ul
+                            display: none
+                            padding: 0 24px 
+                            padding-top: 32px
+                            flex-wrap: wrap
+                            justify-content: space-between
+                            li
+                                width: calc(50% - 8px)
+                                margin-bottom: 32px
+                                font-size: 14px
+                                line-height: 1.1
+                                font-style: normal
+                                font-weight: 400
+                                a
+                                    text-decoration: none
+                                    
+                                    color: #333333
+                        
+                        &.active
+                            ul
+                                display: flex
+                            svg
+                                transform: rotate(180deg)
+
+
 
         .soc
             display: flex
