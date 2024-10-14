@@ -1,4 +1,5 @@
 import Swiper from 'swiper/bundle';
+import { Fancybox } from "@fancyapps/ui";
 
 document.addEventListener('DOMContentLoaded', () => {
 
